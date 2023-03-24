@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1678325839127,
+  "lastUpdate": 1679665357266,
   "repoUrl": "https://github.com/sycamore-rs/sycamore",
   "entries": {
     "Benchmark": [
@@ -26045,6 +26045,72 @@ window.BENCHMARK_DATA = {
             "name": "ssr_medium",
             "value": 60801,
             "range": "± 425",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hyllsimon@gmail.com",
+            "name": "Simon Hyll",
+            "username": "simonhyll"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a6defe7780c9ded36502a00426f90666f600c8ef",
+          "message": "Centered badges on README.md (#589)\n\nCall me crazy but I think this looks better",
+          "timestamp": "2023-03-24T06:37:09-07:00",
+          "tree_id": "10082edcbdaed67efcba71986670c9e4cdddc607",
+          "url": "https://github.com/sycamore-rs/sycamore/commit/a6defe7780c9ded36502a00426f90666f600c8ef"
+        },
+        "date": 1679665355547,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "reactivity_signals",
+            "value": 40644,
+            "range": "± 4037",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_effects",
+            "value": 242395,
+            "range": "± 11917",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_indexed",
+            "value": 59524,
+            "range": "± 2353",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_keyed",
+            "value": 74457,
+            "range": "± 4856",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_context_deeply_nested",
+            "value": 182,
+            "range": "± 67",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_small",
+            "value": 1223,
+            "range": "± 94",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_medium",
+            "value": 73675,
+            "range": "± 6422",
             "unit": "ns/iter"
           }
         ]
