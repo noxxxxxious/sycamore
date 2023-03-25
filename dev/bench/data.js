@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1679696271934,
+  "lastUpdate": 1679753382376,
   "repoUrl": "https://github.com/sycamore-rs/sycamore",
   "entries": {
     "Benchmark": [
@@ -26177,6 +26177,72 @@ window.BENCHMARK_DATA = {
             "name": "ssr_medium",
             "value": 70747,
             "range": "± 1521",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "37006668+lukechu10@users.noreply.github.com",
+            "name": "Luke",
+            "username": "lukechu10"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f6e579a67bd259ea362c120812c8e597786b5c19",
+          "message": "Do not add values to the arena drop list if not necessary (#552)\n\n* Do not add value to the arena drop list if not necessary\r\n\r\n* update and re-enable bumpalo\r\n\r\n* cargo fmt",
+          "timestamp": "2023-03-25T07:05:14-07:00",
+          "tree_id": "17e500cfa23638a2b619b91b8eef6d4cdcb7ae2b",
+          "url": "https://github.com/sycamore-rs/sycamore/commit/f6e579a67bd259ea362c120812c8e597786b5c19"
+        },
+        "date": 1679753381397,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "reactivity_signals",
+            "value": 31054,
+            "range": "± 207",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_effects",
+            "value": 204693,
+            "range": "± 118",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_indexed",
+            "value": 48628,
+            "range": "± 990",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_keyed",
+            "value": 57416,
+            "range": "± 47",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_context_deeply_nested",
+            "value": 122,
+            "range": "± 8",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_small",
+            "value": 1071,
+            "range": "± 3",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_medium",
+            "value": 57834,
+            "range": "± 317",
             "unit": "ns/iter"
           }
         ]
