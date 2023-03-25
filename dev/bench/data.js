@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1679753382376,
+  "lastUpdate": 1679754488529,
   "repoUrl": "https://github.com/sycamore-rs/sycamore",
   "entries": {
     "Benchmark": [
@@ -26243,6 +26243,72 @@ window.BENCHMARK_DATA = {
             "name": "ssr_medium",
             "value": 57834,
             "range": "± 317",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srkoser+GitHub@gmail.com",
+            "name": "Reed Koser",
+            "username": "bobtwinkles"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fedc881f2490da4c7abab7d9b1961d4e064a12c0",
+          "message": "Avoid exponential blowup in size of Builder type (#591)",
+          "timestamp": "2023-03-25T07:23:03-07:00",
+          "tree_id": "176c4f85f82ddadcd21ae2004a11d0870b2c0e68",
+          "url": "https://github.com/sycamore-rs/sycamore/commit/fedc881f2490da4c7abab7d9b1961d4e064a12c0"
+        },
+        "date": 1679754487005,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "reactivity_signals",
+            "value": 40185,
+            "range": "± 775",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_effects",
+            "value": 222246,
+            "range": "± 5358",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_indexed",
+            "value": 61026,
+            "range": "± 389",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_keyed",
+            "value": 69945,
+            "range": "± 994",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_context_deeply_nested",
+            "value": 160,
+            "range": "± 4",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_small",
+            "value": 1191,
+            "range": "± 33",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_medium",
+            "value": 66872,
+            "range": "± 1163",
             "unit": "ns/iter"
           }
         ]
