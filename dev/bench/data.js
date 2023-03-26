@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1679754488529,
+  "lastUpdate": 1679854112290,
   "repoUrl": "https://github.com/sycamore-rs/sycamore",
   "entries": {
     "Benchmark": [
@@ -26309,6 +26309,72 @@ window.BENCHMARK_DATA = {
             "name": "ssr_medium",
             "value": 66872,
             "range": "± 1163",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "37006668+lukechu10@users.noreply.github.com",
+            "name": "Luke",
+            "username": "lukechu10"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c8666c75e76a1d15a6db250903516d62b88d98c7",
+          "message": "Update syn to v2 (#593)\n\n* Update syn to v2\r\n\r\n* cargo fmt\r\n\r\n* Update UI tests\r\n\r\n* Update UI tests again, this time with correct rustc version",
+          "timestamp": "2023-03-26T11:03:13-07:00",
+          "tree_id": "4117a2a5d395cbd08a8c8f6c4524b74ac11b7822",
+          "url": "https://github.com/sycamore-rs/sycamore/commit/c8666c75e76a1d15a6db250903516d62b88d98c7"
+        },
+        "date": 1679854110546,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "reactivity_signals",
+            "value": 39689,
+            "range": "± 2186",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_effects",
+            "value": 233727,
+            "range": "± 13397",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_indexed",
+            "value": 66876,
+            "range": "± 5173",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_keyed",
+            "value": 73790,
+            "range": "± 3618",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_context_deeply_nested",
+            "value": 188,
+            "range": "± 21",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_small",
+            "value": 1219,
+            "range": "± 76",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_medium",
+            "value": 69675,
+            "range": "± 6068",
             "unit": "ns/iter"
           }
         ]
