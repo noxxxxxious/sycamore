@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1679854825078,
+  "lastUpdate": 1683189032250,
   "repoUrl": "https://github.com/sycamore-rs/sycamore",
   "entries": {
     "Benchmark": [
@@ -26441,6 +26441,72 @@ window.BENCHMARK_DATA = {
             "name": "ssr_medium",
             "value": 78770,
             "range": "± 9038",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "37006668+lukechu10@users.noreply.github.com",
+            "name": "Luke",
+            "username": "lukechu10"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6fc3eff896f3b9888c1bdb44463c436eff935b2d",
+          "message": "Fix builder `bind_value` and `bind_checked` calling wasm functions in SSR (#608)\n\nfix builder bind_value and bind_checked calling wasm functions in ssr",
+          "timestamp": "2023-05-04T09:26:36+01:00",
+          "tree_id": "866ccb96b8241db68d5ac0af6739a20a6ebe8654",
+          "url": "https://github.com/sycamore-rs/sycamore/commit/6fc3eff896f3b9888c1bdb44463c436eff935b2d"
+        },
+        "date": 1683189030812,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "reactivity_signals",
+            "value": 34918,
+            "range": "± 25",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_effects",
+            "value": 185957,
+            "range": "± 85",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_indexed",
+            "value": 50748,
+            "range": "± 42",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_keyed",
+            "value": 59382,
+            "range": "± 212",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_context_deeply_nested",
+            "value": 135,
+            "range": "± 4",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_small",
+            "value": 1003,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_medium",
+            "value": 56546,
+            "range": "± 338",
             "unit": "ns/iter"
           }
         ]
