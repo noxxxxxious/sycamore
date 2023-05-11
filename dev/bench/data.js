@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1683834468302,
+  "lastUpdate": 1683836128285,
   "repoUrl": "https://github.com/sycamore-rs/sycamore",
   "entries": {
     "Benchmark": [
@@ -26639,6 +26639,72 @@ window.BENCHMARK_DATA = {
             "name": "ssr_medium",
             "value": 76591,
             "range": "± 2571",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "37006668+lukechu10@users.noreply.github.com",
+            "name": "Luke",
+            "username": "lukechu10"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4e5cbe07d1f9cf03e2492f66f1df6bc6a88e5b60",
+          "message": "Update Trunk, NodeJS, and MSRV to 1.65 (#611)",
+          "timestamp": "2023-05-11T20:11:11Z",
+          "tree_id": "8203bf14015186ff0acc2078cff37d82726efda0",
+          "url": "https://github.com/sycamore-rs/sycamore/commit/4e5cbe07d1f9cf03e2492f66f1df6bc6a88e5b60"
+        },
+        "date": 1683836126702,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "reactivity_signals",
+            "value": 40148,
+            "range": "± 1212",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_effects",
+            "value": 210952,
+            "range": "± 5118",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_indexed",
+            "value": 57221,
+            "range": "± 1263",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_keyed",
+            "value": 66528,
+            "range": "± 1641",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_context_deeply_nested",
+            "value": 153,
+            "range": "± 8",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_small",
+            "value": 1140,
+            "range": "± 29",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_medium",
+            "value": 63933,
+            "range": "± 1382",
             "unit": "ns/iter"
           }
         ]
