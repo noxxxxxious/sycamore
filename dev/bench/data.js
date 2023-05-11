@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1683830421763,
+  "lastUpdate": 1683834468302,
   "repoUrl": "https://github.com/sycamore-rs/sycamore",
   "entries": {
     "Benchmark": [
@@ -26573,6 +26573,72 @@ window.BENCHMARK_DATA = {
             "name": "ssr_medium",
             "value": 77724,
             "range": "± 4721",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "37006668+lukechu10@users.noreply.github.com",
+            "name": "Luke",
+            "username": "lukechu10"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d078f5cedb40e77240f5219f988964cc7ccdc5c8",
+          "message": "Fix navigating to an anchor and route matching with hash parameters (#610)\n\n* fix navigating to anchor\r\n\r\n* add smooth scrolling to website and update deps\r\n\r\n* ignore hash when matching path\r\n\r\n* appease clippy",
+          "timestamp": "2023-05-11T20:42:38+01:00",
+          "tree_id": "df4129185d58279c5a8b7282b0ee9988b5d684db",
+          "url": "https://github.com/sycamore-rs/sycamore/commit/d078f5cedb40e77240f5219f988964cc7ccdc5c8"
+        },
+        "date": 1683834466594,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "reactivity_signals",
+            "value": 43657,
+            "range": "± 1243",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_effects",
+            "value": 250076,
+            "range": "± 11574",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_indexed",
+            "value": 67394,
+            "range": "± 4012",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_keyed",
+            "value": 78171,
+            "range": "± 3722",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_context_deeply_nested",
+            "value": 210,
+            "range": "± 24",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_small",
+            "value": 1348,
+            "range": "± 66",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_medium",
+            "value": 76591,
+            "range": "± 2571",
             "unit": "ns/iter"
           }
         ]
