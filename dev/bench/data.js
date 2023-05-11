@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1683189032250,
+  "lastUpdate": 1683830421763,
   "repoUrl": "https://github.com/sycamore-rs/sycamore",
   "entries": {
     "Benchmark": [
@@ -26507,6 +26507,72 @@ window.BENCHMARK_DATA = {
             "name": "ssr_medium",
             "value": 56546,
             "range": "± 338",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "88556823+Miroito@users.noreply.github.com",
+            "name": "Miroito",
+            "username": "Miroito"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f145190e2af38e864b050ee9a8fbdc4837e83381",
+          "message": "Ignore query parameters when matching a path to a route (#575)\n\nFixes #562",
+          "timestamp": "2023-05-11T19:35:19+01:00",
+          "tree_id": "8c43c8eb68ea2eb3b3da6cca3e9e6ffa28c0e505",
+          "url": "https://github.com/sycamore-rs/sycamore/commit/f145190e2af38e864b050ee9a8fbdc4837e83381"
+        },
+        "date": 1683830420127,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "reactivity_signals",
+            "value": 43856,
+            "range": "± 2703",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_effects",
+            "value": 257339,
+            "range": "± 29834",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_indexed",
+            "value": 67220,
+            "range": "± 4391",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_keyed",
+            "value": 79970,
+            "range": "± 4121",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_context_deeply_nested",
+            "value": 235,
+            "range": "± 73",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_small",
+            "value": 1371,
+            "range": "± 89",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_medium",
+            "value": 77724,
+            "range": "± 4721",
             "unit": "ns/iter"
           }
         ]
