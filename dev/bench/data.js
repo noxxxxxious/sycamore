@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1683836128285,
+  "lastUpdate": 1684396566734,
   "repoUrl": "https://github.com/sycamore-rs/sycamore",
   "entries": {
     "Benchmark": [
@@ -26705,6 +26705,72 @@ window.BENCHMARK_DATA = {
             "name": "ssr_medium",
             "value": 63933,
             "range": "± 1382",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "complife@gmail.com",
+            "name": "Jeffrey Hutchins",
+            "username": "jhutchins"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "abce04fe341740c3c9245622208fb5a7ea792498",
+          "message": "Fix missing `cx` parameter in routing.md docs (#613)",
+          "timestamp": "2023-05-18T08:52:04+01:00",
+          "tree_id": "c157ff5ea2f222a7ef43971648160132d9af193f",
+          "url": "https://github.com/sycamore-rs/sycamore/commit/abce04fe341740c3c9245622208fb5a7ea792498"
+        },
+        "date": 1684396565799,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "reactivity_signals",
+            "value": 35030,
+            "range": "± 22",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_effects",
+            "value": 186850,
+            "range": "± 82",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_indexed",
+            "value": 50738,
+            "range": "± 31",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_keyed",
+            "value": 58958,
+            "range": "± 443",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_context_deeply_nested",
+            "value": 134,
+            "range": "± 2",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_small",
+            "value": 1005,
+            "range": "± 3",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_medium",
+            "value": 57557,
+            "range": "± 961",
             "unit": "ns/iter"
           }
         ]
