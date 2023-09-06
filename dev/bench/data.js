@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1684396566734,
+  "lastUpdate": 1693986979784,
   "repoUrl": "https://github.com/sycamore-rs/sycamore",
   "entries": {
     "Benchmark": [
@@ -26771,6 +26771,72 @@ window.BENCHMARK_DATA = {
             "name": "ssr_medium",
             "value": 57557,
             "range": "± 961",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "1581674+mekanoe@users.noreply.github.com",
+            "name": "noe",
+            "username": "mekanoe"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6bb700bebeb1fa928c20c3ed9af7d53138ebe95a",
+          "message": "Fix view! to handle dashed attributes with Rust keywords (#624)\n\nSwitches view! AttributeName parser to Ident::parse_any to handle keywords in extended attribute names.\r\n\r\nFixes #620",
+          "timestamp": "2023-09-06T09:53:21+02:00",
+          "tree_id": "f89d11b8f7ea09f39fb88e868e0866a71b6eecbd",
+          "url": "https://github.com/sycamore-rs/sycamore/commit/6bb700bebeb1fa928c20c3ed9af7d53138ebe95a"
+        },
+        "date": 1693986978431,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "reactivity_signals",
+            "value": 32415,
+            "range": "± 38",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_effects",
+            "value": 180399,
+            "range": "± 93",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_indexed",
+            "value": 49772,
+            "range": "± 36",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_keyed",
+            "value": 57309,
+            "range": "± 954",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_context_deeply_nested",
+            "value": 131,
+            "range": "± 4",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_small",
+            "value": 1060,
+            "range": "± 1",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_medium",
+            "value": 57651,
+            "range": "± 315",
             "unit": "ns/iter"
           }
         ]
