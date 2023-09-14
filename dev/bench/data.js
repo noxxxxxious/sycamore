@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1694380545622,
+  "lastUpdate": 1694722443873,
   "repoUrl": "https://github.com/sycamore-rs/sycamore",
   "entries": {
     "Benchmark": [
@@ -26903,6 +26903,96 @@ window.BENCHMARK_DATA = {
             "name": "ssr_medium",
             "value": 69163,
             "range": "± 391",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "37006668+lukechu10@users.noreply.github.com",
+            "name": "Luke",
+            "username": "lukechu10"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3ce37fb3296ae825deedda66994a001ff56014dc",
+          "message": "Reactivity v3! (Part 1) 🎉  (#612)\n\n* scopes\r\n\r\n* signal get and set\r\n\r\n* signals owned by scopes\r\n\r\n* memos and reactive graph update propagation\r\n\r\n* improve performance by reusing allocations in topo_sort\r\n\r\n* add remaining reactive hooks\r\n\r\n* add some docs and reexport everything at top-level\r\n\r\n* add a lot more docs\r\n\r\n* add docs to everything and impl Debug, Display\r\n\r\n* add context api\r\n\r\n* migrate signal and memo tests over\r\n\r\n* separate effects from memos and defer effect callbacks\r\n\r\n* migrate all effect tests\r\n\r\n* check if effect is alive when calling it rather than removing links during drop\r\n\r\n* fix a few memo tests migrated from effects\r\n\r\n* some perf optimizations around slotmap indexing\r\n\r\n* migrate over map_keyed and map_indexed\r\n\r\n* remove unnecessary Rc\r\n\r\n* make Accessor take ref instead of move\r\n\r\n* add effect batching\r\n\r\n* Update some docs to new reactivity\r\n\r\nCo-authored-by: Genna Wingert <wingertge@gmail.com>\r\n\r\n* initial store API implementation\r\n\r\n* wip: add derive macro for State and macro for parsing lens path\r\n\r\n* add StateTrigger trait and make get! take a Store<T>\r\n\r\n* Implement set! macro.\r\n\r\n* fix doc comment\r\n\r\n* Rename store2.rs to store.rs\r\n\r\n* Satisfy clippy\r\n\r\n* Split scope into a new file\r\n\r\n* Move tests into scope.rs as well\r\n\r\n* Remove explicit cx: Scope\r\n\r\n* Set global root when propagating updates\r\n\r\n* Simplify Root internals\r\n\r\n* Fix CI?\r\n\r\n* Update Cargo.toml for new crates\r\n\r\n* Fix RUSTFLAGS\r\n\r\n* Fix RUSTFLAGS attempt 2\r\n\r\n* Fix conditional compilation\r\n\r\n* Remove examples folder from sycamore-reactive3\r\n\r\n* Do not run all tests\r\n\r\n* Ignore doctest in lib.rs\r\n\r\n---------\r\n\r\nCo-authored-by: Genna Wingert <wingertge@gmail.com>",
+          "timestamp": "2023-09-14T22:09:59+02:00",
+          "tree_id": "9759ef678f58ed977016fb4e4d89c93ca5c8ebd2",
+          "url": "https://github.com/sycamore-rs/sycamore/commit/3ce37fb3296ae825deedda66994a001ff56014dc"
+        },
+        "date": 1694722442918,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "reactivity_signals_new",
+            "value": 43971,
+            "range": "± 456",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_signals",
+            "value": 32307,
+            "range": "± 14",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_effects_new",
+            "value": 132406,
+            "range": "± 325",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_effects",
+            "value": 175419,
+            "range": "± 149",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_indexed",
+            "value": 47457,
+            "range": "± 26",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_keyed",
+            "value": 59342,
+            "range": "± 372",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_context_deeply_nested",
+            "value": 131,
+            "range": "± 3",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "deep_creation",
+            "value": 624165,
+            "range": "± 493",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "deep_creation_new",
+            "value": 352463,
+            "range": "± 13985",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_small",
+            "value": 1057,
+            "range": "± 11",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_medium",
+            "value": 59073,
+            "range": "± 162",
             "unit": "ns/iter"
           }
         ]
