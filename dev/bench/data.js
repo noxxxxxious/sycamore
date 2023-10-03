@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1694936580812,
+  "lastUpdate": 1696366994388,
   "repoUrl": "https://github.com/sycamore-rs/sycamore",
   "entries": {
     "Benchmark": [
@@ -27083,6 +27083,96 @@ window.BENCHMARK_DATA = {
             "name": "ssr_medium",
             "value": 57528,
             "range": "± 427",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "37006668+lukechu10@users.noreply.github.com",
+            "name": "Luke",
+            "username": "lukechu10"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3b0cd66399ddcc93d1fa1917b2b3bcaf3676d911",
+          "message": "Credit @nate-sys for designing the logo in README.md",
+          "timestamp": "2023-10-03T21:58:57+01:00",
+          "tree_id": "300d5d7238ec0d796050cd161f39d6c5de0c0eac",
+          "url": "https://github.com/sycamore-rs/sycamore/commit/3b0cd66399ddcc93d1fa1917b2b3bcaf3676d911"
+        },
+        "date": 1696366992223,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "reactivity_signals_new",
+            "value": 54193,
+            "range": "± 301",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_signals",
+            "value": 40686,
+            "range": "± 382",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_effects_new",
+            "value": 161710,
+            "range": "± 1227",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_effects",
+            "value": 210272,
+            "range": "± 3481",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_indexed",
+            "value": 57408,
+            "range": "± 423",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_keyed",
+            "value": 70103,
+            "range": "± 438",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_context_deeply_nested",
+            "value": 169,
+            "range": "± 5",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "deep_creation",
+            "value": 746202,
+            "range": "± 6164",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "deep_creation_new",
+            "value": 404531,
+            "range": "± 10415",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_small",
+            "value": 1266,
+            "range": "± 15",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_medium",
+            "value": 68192,
+            "range": "± 768",
             "unit": "ns/iter"
           }
         ]
