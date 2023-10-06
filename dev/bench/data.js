@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1696609231815,
+  "lastUpdate": 1696610720185,
   "repoUrl": "https://github.com/sycamore-rs/sycamore",
   "entries": {
     "Benchmark": [
@@ -27533,6 +27533,78 @@ window.BENCHMARK_DATA = {
             "name": "ssr_medium",
             "value": 34223,
             "range": "± 46",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "37006668+lukechu10@users.noreply.github.com",
+            "name": "Luke",
+            "username": "lukechu10"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fc8bf2995086a1aea343725e56be562ad84d4efc",
+          "message": "Repace the `Memo` struct with `ReadSignal` (#632)\n\nRepace the Memo struct with ReadSignal\r\n\r\n`Memo` used to be a wrapper struct around `ReadSignal` which did not provide anything extra so this makes everything simpler.",
+          "timestamp": "2023-10-06T16:41:21Z",
+          "tree_id": "fd84e8fb23ad891fb47941dcb50443b7b1b92d37",
+          "url": "https://github.com/sycamore-rs/sycamore/commit/fc8bf2995086a1aea343725e56be562ad84d4efc"
+        },
+        "date": 1696610718796,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "reactivity_signals",
+            "value": 58697,
+            "range": "± 1035",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_effects",
+            "value": 163351,
+            "range": "± 3729",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_indexed",
+            "value": 25582,
+            "range": "± 86157",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_keyed",
+            "value": 34579,
+            "range": "± 72090",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_context_deeply_nested",
+            "value": 3253,
+            "range": "± 803",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "deep_creation",
+            "value": 385860,
+            "range": "± 17501",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_small",
+            "value": 1125,
+            "range": "± 64",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_medium",
+            "value": 41148,
+            "range": "± 40",
             "unit": "ns/iter"
           }
         ]
