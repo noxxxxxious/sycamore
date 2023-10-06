@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1696366994388,
+  "lastUpdate": 1696605793226,
   "repoUrl": "https://github.com/sycamore-rs/sycamore",
   "entries": {
     "Benchmark": [
@@ -27173,6 +27173,78 @@ window.BENCHMARK_DATA = {
             "name": "ssr_medium",
             "value": 68192,
             "range": "± 768",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "37006668+lukechu10@users.noreply.github.com",
+            "name": "Luke",
+            "username": "lukechu10"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3a0a7f339e5575e31e0eb342601cec61983cb569",
+          "message": "Reactivity v3 (Part 2) (#626)\n\n* Port sycamore, sycamore-core, sycamore-web, sycamore-futures and hello-world, counters examples\r\n\r\n* components example\r\n\r\n* context example and fix context API\r\n\r\n* Some small fixes\r\n\r\n* semi-working js-framework-benchmark\r\n\r\n* Upgrade setup-chromedriver action from v1 to v2\r\n\r\n* Upload benchmark results as artifact\r\n\r\n* Update bench-diff tool to work with new format\r\n\r\n* Make all examples compile\r\n\r\n* Fix motion example\r\n\r\n* Replace old sycamore_reactive crate\r\n\r\n* Port website\r\n\r\n* Fix svg example\r\n\r\n* Build website in CI using nightly Rust\r\n\r\n* Update workflow action dependencies\r\n\r\n* Make all tests compile in sycamore\r\n\r\n* Make default tests pass\r\n\r\n* Update UI tests\r\n\r\n* Fix clippy\r\n\r\n* Fix compile errors\r\n\r\n* Fix bench wrong context type\r\n\r\n* Fix on_mount and temporarily fix todomvc\r\n\r\n* Update some tests and rename some internal functions\r\n\r\n* Remove scope\r\n\r\n* Remove create_effect_scoped and fix bug in reactivity DFS\r\n\r\n* Fix reactivity tests\r\n\r\n* Fix clippy\r\n\r\n* Fix some more tests\r\n\r\n* Some perf optimizations\r\n\r\n* Add cleanup to js-framework-benchmark\r\n\r\n* Remove DependencyTracker\r\n\r\n* Use SmallVec optimization\r\n\r\n* Revert \"Remove DependencyTracker\"\r\n\r\nThis reverts commit 483edb875364307a6000060935f51178361a434f.\r\n\r\nfixup\r\n\r\n* Remove self from dependents when node is disposed\r\n\r\n* Change current from Option<View<G>> to Option<Vec<G>>\r\n\r\n* Fix some more tests\r\n\r\n* Fix typo with name shadowing\r\n\r\n* All tests pass!!!\r\n\r\n* Remove store API (for now)\r\n\r\n* Fix website deploy workflow\r\n\r\n* Update reactivity dirty checking logic\r\n\r\nInstead of checking if a dependency changed, we now check if the current node is dirty.\r\n\r\n* Add tracing to sycamore-reactive and sycamore crates\r\n\r\n* Remove wrapping event handlers in signals\r\n\r\n* Fix clippy\r\n\r\n* Update docs first pass\r\n\r\n* Upload webdriver-ts-results HTML as artifact\r\n\r\n* Add a migration guide and quickly update architecture.md and development.md",
+          "timestamp": "2023-10-06T16:19:16+01:00",
+          "tree_id": "2bc841a160ac20a99af709e68f99e32ffc92ffda",
+          "url": "https://github.com/sycamore-rs/sycamore/commit/3a0a7f339e5575e31e0eb342601cec61983cb569"
+        },
+        "date": 1696605791061,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "reactivity_signals",
+            "value": 54686,
+            "range": "± 1069",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_effects",
+            "value": 165987,
+            "range": "± 8357",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_indexed",
+            "value": 25011,
+            "range": "± 2729",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_keyed",
+            "value": 34405,
+            "range": "± 69944",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_context_deeply_nested",
+            "value": 3408,
+            "range": "± 781",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "deep_creation",
+            "value": 377499,
+            "range": "± 34492",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_small",
+            "value": 1127,
+            "range": "± 16",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_medium",
+            "value": 41383,
+            "range": "± 475",
             "unit": "ns/iter"
           }
         ]
