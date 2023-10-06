@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1696606485357,
+  "lastUpdate": 1696607498448,
   "repoUrl": "https://github.com/sycamore-rs/sycamore",
   "entries": {
     "Benchmark": [
@@ -27389,6 +27389,78 @@ window.BENCHMARK_DATA = {
             "name": "ssr_medium",
             "value": 34886,
             "range": "± 147",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "37006668+lukechu10@users.noreply.github.com",
+            "name": "Luke",
+            "username": "lukechu10"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a1b288b90a1ab98283db8f6c4d181c8682cf6e08",
+          "message": "Dont suggest wee-alloc in docs (#630)\n\n`wee-alloc` should no longer be recommended because of a memory leak: https://github.com/rustwasm/wee_alloc/issues/85\r\n\r\nIt appears that the project is abandoned and that this issue will not be fixed anytime soon.\r\n\r\nCloses #614",
+          "timestamp": "2023-10-06T15:47:46Z",
+          "tree_id": "788f11a32239a5adea239a29db998fc68069940b",
+          "url": "https://github.com/sycamore-rs/sycamore/commit/a1b288b90a1ab98283db8f6c4d181c8682cf6e08"
+        },
+        "date": 1696607496744,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "reactivity_signals",
+            "value": 42862,
+            "range": "± 1289",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_effects",
+            "value": 132972,
+            "range": "± 3428",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_indexed",
+            "value": 16049,
+            "range": "± 2256",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_keyed",
+            "value": 25089,
+            "range": "± 35724",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_context_deeply_nested",
+            "value": 2879,
+            "range": "± 1017",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "deep_creation",
+            "value": 301360,
+            "range": "± 16714",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_small",
+            "value": 974,
+            "range": "± 23",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_medium",
+            "value": 35133,
+            "range": "± 45",
             "unit": "ns/iter"
           }
         ]
