@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1696606378712,
+  "lastUpdate": 1696606485357,
   "repoUrl": "https://github.com/sycamore-rs/sycamore",
   "entries": {
     "Benchmark": [
@@ -27317,6 +27317,78 @@ window.BENCHMARK_DATA = {
             "name": "ssr_medium",
             "value": 34406,
             "range": "± 81",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b53d6f1e55b26d548ec3d0fa54a04e8fc029f251",
+          "message": "Bump postcss from 8.4.23 to 8.4.31 in /website (#628)\n\nBumps [postcss](https://github.com/postcss/postcss) from 8.4.23 to 8.4.31.\r\n- [Release notes](https://github.com/postcss/postcss/releases)\r\n- [Changelog](https://github.com/postcss/postcss/blob/main/CHANGELOG.md)\r\n- [Commits](https://github.com/postcss/postcss/compare/8.4.23...8.4.31)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: postcss\r\n  dependency-type: direct:development\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "timestamp": "2023-10-06T16:30:42+01:00",
+          "tree_id": "c9cecc9f838a1ae34541bb440d0bbf62f01005f9",
+          "url": "https://github.com/sycamore-rs/sycamore/commit/b53d6f1e55b26d548ec3d0fa54a04e8fc029f251"
+        },
+        "date": 1696606484158,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "reactivity_signals",
+            "value": 46063,
+            "range": "± 792",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_effects",
+            "value": 139116,
+            "range": "± 4680",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_indexed",
+            "value": 21540,
+            "range": "± 138562",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_keyed",
+            "value": 25456,
+            "range": "± 56367",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_context_deeply_nested",
+            "value": 3382,
+            "range": "± 4079",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "deep_creation",
+            "value": 304054,
+            "range": "± 21525",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_small",
+            "value": 951,
+            "range": "± 2",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_medium",
+            "value": 34886,
+            "range": "± 147",
             "unit": "ns/iter"
           }
         ]
