@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1696607498448,
+  "lastUpdate": 1696609231815,
   "repoUrl": "https://github.com/sycamore-rs/sycamore",
   "entries": {
     "Benchmark": [
@@ -27461,6 +27461,78 @@ window.BENCHMARK_DATA = {
             "name": "ssr_medium",
             "value": 35133,
             "range": "± 45",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "37006668+lukechu10@users.noreply.github.com",
+            "name": "Luke",
+            "username": "lukechu10"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "42c1294083993a5388c9c755adf423afcb402d6f",
+          "message": "Make batch affect both memos and effects (#631)\n\nAlso simplifies effects by simply making them into memos that have a value of `()`.",
+          "timestamp": "2023-10-06T17:16:45+01:00",
+          "tree_id": "5c78acfc9efc941b6b3344a753e355d772995360",
+          "url": "https://github.com/sycamore-rs/sycamore/commit/42c1294083993a5388c9c755adf423afcb402d6f"
+        },
+        "date": 1696609230499,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "reactivity_signals",
+            "value": 48665,
+            "range": "± 2789",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_effects",
+            "value": 138271,
+            "range": "± 2060",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_indexed",
+            "value": 22580,
+            "range": "± 181040",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_keyed",
+            "value": 30312,
+            "range": "± 63569",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_context_deeply_nested",
+            "value": 3762,
+            "range": "± 976",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "deep_creation",
+            "value": 304569,
+            "range": "± 43067",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_small",
+            "value": 942,
+            "range": "± 3",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_medium",
+            "value": 34223,
+            "range": "± 46",
             "unit": "ns/iter"
           }
         ]
