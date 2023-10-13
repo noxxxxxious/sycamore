@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1697008710366,
+  "lastUpdate": 1697217685501,
   "repoUrl": "https://github.com/sycamore-rs/sycamore",
   "entries": {
     "Benchmark": [
@@ -27965,6 +27965,78 @@ window.BENCHMARK_DATA = {
             "name": "ssr_medium",
             "value": 35186,
             "range": "± 316",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "37006668+lukechu10@users.noreply.github.com",
+            "name": "Luke",
+            "username": "lukechu10"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bc25aae469a11e03b6fb3c6bef8f033763fa022b",
+          "message": "Fix panic about current not being a child of parent in clean_children (#639)",
+          "timestamp": "2023-10-13T18:17:42+01:00",
+          "tree_id": "ca57ad5dca3b1c039cc19bbd2796fcaed3680eea",
+          "url": "https://github.com/sycamore-rs/sycamore/commit/bc25aae469a11e03b6fb3c6bef8f033763fa022b"
+        },
+        "date": 1697217684383,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "reactivity_signals",
+            "value": 48996,
+            "range": "± 1158",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_effects",
+            "value": 137014,
+            "range": "± 4001",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_indexed",
+            "value": 21275,
+            "range": "± 137387",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_keyed",
+            "value": 28910,
+            "range": "± 53690",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_context_deeply_nested",
+            "value": 3087,
+            "range": "± 725",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "deep_creation",
+            "value": 305620,
+            "range": "± 40902",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_small",
+            "value": 934,
+            "range": "± 2",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_medium",
+            "value": 34375,
+            "range": "± 244",
             "unit": "ns/iter"
           }
         ]
