@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1697217685501,
+  "lastUpdate": 1697817226717,
   "repoUrl": "https://github.com/sycamore-rs/sycamore",
   "entries": {
     "Benchmark": [
@@ -28037,6 +28037,78 @@ window.BENCHMARK_DATA = {
             "name": "ssr_medium",
             "value": 34375,
             "range": "± 244",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "37006668+lukechu10@users.noreply.github.com",
+            "name": "Luke",
+            "username": "lukechu10"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e49c74cc75856439e2252b7f12333e0e1a66702d",
+          "message": "Re-export `wasm-bindgen`, `js-sys`, and event types from `web-sys` (#642)\n\n* re-export web_sys for user convenience\r\n\r\n* also re-exporting js_sys\r\n\r\n* also adding wasm_bindgen because of JsValue\r\n\r\n* Only re-export HTML events instead of web-sys\r\n\r\nweb-sys relies very haevily of feature flags to determine which parts of the API is compiled. Sycamore itself enables a subset of these flags but in many cases, the downstream user will need to add web-sys anyways should they wish to use an API not enabled by Sycamore.\r\n\r\n* Remove wasm-bindgen from examples\r\n\r\n---------\r\n\r\nCo-authored-by: Blaine Hansen <faichenshing@gmail.com>",
+          "timestamp": "2023-10-20T15:49:58Z",
+          "tree_id": "c85fb3f78149aa6a7ea87118b9793797e9abf4b5",
+          "url": "https://github.com/sycamore-rs/sycamore/commit/e49c74cc75856439e2252b7f12333e0e1a66702d"
+        },
+        "date": 1697817224696,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "reactivity_signals",
+            "value": 60744,
+            "range": "± 965",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_effects",
+            "value": 163595,
+            "range": "± 3021",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_indexed",
+            "value": 26028,
+            "range": "± 87213",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_map_keyed",
+            "value": 34793,
+            "range": "± 74903",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "reactivity_context_deeply_nested",
+            "value": 3420,
+            "range": "± 886",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "deep_creation",
+            "value": 368197,
+            "range": "± 15437",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_small",
+            "value": 1145,
+            "range": "± 14",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ssr_medium",
+            "value": 41720,
+            "range": "± 1528",
             "unit": "ns/iter"
           }
         ]
